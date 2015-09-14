@@ -80,3 +80,32 @@
 		</footer>
 	</body>
 </html># assignment-week-4
+
+
+
+
+JAVA SCRIPT
+
+
+$("#sign-up-botton").click(function() {
+	console.log('clicked 1');
+});
+
+$(".readmore").click(function(){
+	event.preventDefault();
+    $('#show-this-on-click').slideDown().show;
+    $(".readmore").addClass("hide");
+    console.log('show1');
+    $(".readless").removeClass("hide");
+});	
+// $( document ).ready(function() {
+//      console.log( "document loaded" );
+// });
+
+$(".readless").click(function(){
+	event.preventDefault();
+    $('#show-this-on-click').slideUp().hide;
+    $(".readless").addClass("hide");
+    console.log('slideup');
+    $(".readmore").removeClass("hide");
+});	
